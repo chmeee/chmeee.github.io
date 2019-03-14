@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Counting time oneliner"
-date:   2019-03-14 17:30:36 +0100
+date:   2019-03-14 16:30:36 +0100
 categories: oneliner ruby gist
 ---
 I find it difficult to count time easily. I mean, to count periods of time.
