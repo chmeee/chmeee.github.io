@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Laptop config management with Ansible"
-date:   2019-04-13 11:30:00 +0100
+date:   2019-04-12 18:30:00 +0100
 categories: ansible config-management archlinux
 ---
 
@@ -15,10 +15,10 @@ Anyway, I considered doing a dump of the packages in the old laptop, install the
 
 Also, I wanted to try something different. Configure my laptop to use [Wayland](https://wayland.freedesktop.org) and [Sway](https://swaywm.org).
 
-Lastly, I didn't want to repeat this actions manually again in the future.
+Lastly, I didn't want to repeat these actions manually again in the future.
 
 In a conversation with my friend [Abel](https://twitter.com/amart1nr) he suggested that I could configure everything with [Ansible](https://ansible.com).
-I told him "no way, too much work". But then I thought about and... "why not?".
+I told him "no way, too much work". But then I thought about and... "what the hell, why not? Can't be that complex".
 
 So I created a [new repo](https://github.com/chmeee/arch-laptop-ansible) in Github and started working in it.
 
@@ -36,5 +36,13 @@ For instance: home-config, window-manager, editors, containers, virtualization, 
 Then in each of them I install the packages, copy config files and launch services (if needed).
 
 I created a new Ansible module for the AUR packages helper [`yay`](https://github.com/Jguer/yay) which is basically a copy of the `pacman` module substituting `pacman` for `yay` and modifying some options.
+
+And also I had to do some logic to install vagrant plugins and visual studio code extensions.
+
+There are some things still missing that I'm working but overall, it has everything I need.
+
+Of course, there are some missing parts (like the `$HOME/.ssh` directory, API keys for cloud services, etc.) that obviously are not going to the github repo (me being paranoid I feel uneasy about having it public with the current data).
+
+In the end, it's been an interesting exercise, I have learned more ansible and now I know exactly what's installed in my laptop and I can reproduce it painlessly in the future.
 
 Please, feel free to fork, PR or contact me for comments.
