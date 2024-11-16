@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "Bienvenidos al blog de El Baduklaque"
 date: 2024-11-16 18:29 +00:00
 

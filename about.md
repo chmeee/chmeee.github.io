@@ -1,6 +1,6 @@
 ---
-layout: signle
-title: Sobre este blog
+layout: page
+title: About
 permalink: /about/
 ---
 
