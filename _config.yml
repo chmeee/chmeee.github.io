@@ -26,10 +26,10 @@ ithub_username:  chmeee
 markdown: kramdown
 
 # theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"k
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
